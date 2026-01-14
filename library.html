@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SmartSchool Hub</h1>
+    </header>
+    <nav>
+        <a href="index.html">Homework Tracker</a>
+        <a href="library.html">Library</a>
+        <a href="events.html">Events</a>
+        <a href="announcment.html">announcment</a>
+        <a href="profile.html">students profile</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Virtual School Library</h2>
+        <input type="text" id="searchBook" placeholder="Search books..." onkeyup="searchBooks()">
+
+        <table id="libraryTable">
+            <tr>
+                <th>Book Name</th>
+                <th>Category</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Mathematics Basics</td>
+                <td>Math</td>
+                <td><a href="#">Download PDF</a></td>
+            </tr>
+            <tr>
+                <td>Science Explorer</td>
+                <td>Science</td>
+                <td><a href="#">Download PDF</a></td>
+            </tr>
+            <tr>
+                <td>History of World</td>
+                <td>History</td>
+                <td><a href="#">Download PDF</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
