@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SmartSchool Hub</h1>
+    </header>
+    <nav>
+        <a href="index.html">Homework Tracker</a>
+        <a href="library.html">Library</a>
+        <a href="events.html">Events</a>
+        <a href="announcment.html">announcment</a>
+        <a href="profile.html">studends profile</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>School Event Calendar</h2>
+        <input type="month" id="eventMonth" onchange="showEvents()">
+
+        <table id="eventTable">
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+            </tr>
+            <tr>
+                <td>2026-01-15</td>
+                <td>Science Fair</td>
+            </tr>
+            <tr>
+                <td>2026-02-05</td>
+                <td>Annual Sports Day</td>
+            </tr>
+            <tr>
+                <td>2026-03-10</td>
+                <td>Art Competition</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
