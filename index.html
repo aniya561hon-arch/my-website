@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SmartSchool Hub</h1>
+    </header>
+    <nav>
+        <a href="index.html">Homework Tracker</a>
+        <a href="library.html">Library</a>
+        <a href="events.html">Events</a>
+        <a href="announcment.html">announcment</a>
+        <a href="profile.html">stydents profile</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Homework Tracker & Reminder</h2>
+
+        <label>Subject:</label>
+        <input type="text" id="subject" placeholder="Enter subject">
+
+        <label>Homework:</label>
+        <input type="text" id="homework" placeholder="Enter homework">
+
+        <label>Due Date:</label>
+        <input type="date" id="duedate">
+
+        <button onclick="addHomework()">Add Homework</button>
+
+        <table id="homeworkTable">
+            <tr>
+                <th>Subject</th>
+                <th>Homework</th>
+                <th>Due Date</th>
+                <th>Status</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
