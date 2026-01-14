@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SmartSchool Hub</h1>
+        <p>Your one-stop school portal</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Homework Tracker</a>
+        <a href="library.html">Library</a>
+        <a href="events.html">Events</a>
+        <a href="announcements.html">Announcements</a>
+        <a href="profile.html">studends profile</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Student Profile</h2>
+
+        <!-- Student Information -->
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <img src="profile-cute-little-girl-park-sitting-grass-black-white-sepia-portrait-child-34516795.webp" alt="Profile Picture" style="width:150px; border-radius:50%; border:2px solid #4CAF50;">
+            <div>
+                <p><strong>Name:</strong> sara khan</p>
+                <p><strong>Class:</strong> 2th Grade</p>
+                <p><strong>Roll Number:</strong> 8</p>
+            </div>
+        </div>
+
+        <!-- Grades Table -->
+        <h3>Grades</h3>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+            <tr><td>Math</td><td>A</td></tr>
+            <tr><td>Science</td><td>B+</td></tr>
+            <tr><td>English</td><td>A-</td></tr>
+            <tr><td>History</td><td>B</td></tr>
+            <tr><td>Computer</td><td>A+</td></tr>
+        </table>
+
+        <!-- Attendance -->
+        <h3>Attendance</h3>
+        <p>Attendance: <strong>92%</strong></p>
+
+        <!-- Achievements Section -->
+        <h3>Achievements</h3>
+        <ul id="achievementsList">
+            <li>1st Place in Science Fair 2025</li>
+            <li>Winner of Math Olympiad 2025</li>
+            <li>Best Student Award 2025</li>
+        </ul>
+
+        <!-- Add New Achievement -->
+        <input type="text" id="achievementInput" placeholder="Add new achievement">
+        <button onclick="addAchievement()">Add Achievement</button>
+    </div>
+
+    <!-- JavaScript for adding achievements -->
+    <script>
+        function addAchievement() {
+            let input = document.getElementById("achievementInput").value.trim();
+            if(input === "") {
+                alert("Please enter an achievement!");
+                return;
+            }
+            let ul = document.getElementById("achievementsList");
+            let li = document.createElement("li");
+            li.textContent = input;
+            ul.appendChild(li);
+            document.getElementById("achievementInput").value = "";
+            alert("Achievement added successfully!");
+        }
+    </script>
+
+</body>
+</html>
